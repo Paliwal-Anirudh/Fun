@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-height: 100vh; background: #070713; color: #f8fafc; }
+.animated-bg { background: radial-gradient(circle at 20% 10%, #22d3ee55, transparent 28rem), radial-gradient(circle at 80% 0%, #d946ef44, transparent 30rem), linear-gradient(135deg, #070713, #111827 55%, #312e81); }
+.glass { border: 1px solid rgb(255 255 255 / 0.15); background: rgb(255 255 255 / 0.1); box-shadow: 0 24px 80px rgb(0 0 0 / 0.35); backdrop-filter: blur(18px); }

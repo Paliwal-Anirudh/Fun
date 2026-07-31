@@ -1,0 +1,3 @@
+import Link from "next/link";
+import type { Level } from "@/types/game";
+export function LevelCard({ level, locked, done }: Readonly<{ level: Level; locked: boolean; done: boolean }>) { return <Link aria-disabled={locked} href={locked ? "#" : `/level/${level.id}`} className={`rounded-3xl border p-5 ${locked ? "border-white/10 bg-white/5 opacity-50" : "border-white/15 bg-white/10 hover:bg-white/15"}`}><p className="text-sm text-cyan-200">Level {level.id}</p><h3 className="mt-1 font-black">{level.title}</h3><p className="mt-2 text-sm text-slate-300">{done ? "Completed" : locked ? "Locked" : "Ready"}</p></Link>; }
