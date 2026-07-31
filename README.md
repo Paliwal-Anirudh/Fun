@@ -56,6 +56,10 @@ npm run build
 - Update levels in `src/data/levels.ts`.
 - Update surprise page copy/media in `src/data/surprise.ts`.
 
+## Conflict resolution note
+
+The files reported by GitHub as conflicted (`README.md`, `package.json`, `postcss.config.mjs`, `src/app/globals.css`, `src/app/layout.tsx`, `src/app/page.tsx`, and `src/components/ProgressBar.tsx`) are intentionally kept as the canonical Fun implementation in this branch. If GitHub still shows conflicts, update the branch with the target branch and keep these versions of the files during conflict resolution.
+
 ## Dependency installation troubleshooting
 
 If `npm install` returns `403 Forbidden` in a restricted corporate/container environment, confirm that npm is allowed to reach the public registry and that proxy variables are valid:
